@@ -16,7 +16,8 @@
     "clean-report": "rimraf ./coverage",
     "test": "npm run clean-report && jest -c jest.config.js --runInBand --detectOpenHandles",
     "test:watch": "jest --watch",
-    "test:cov": "jest --coverage"
+    "test:cov": "jest --coverage",
+    "build": "tsc && tsc -m es6 --outDir lib-esm"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
